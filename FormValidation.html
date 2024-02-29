@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color: aquamarine;
+            background-color: rgb(62, 65, 64);
             font-size: 16px;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
         }
@@ -16,10 +16,44 @@
     .error{
         border: 2px solid red ;
     }
+    .container{
+        background-color: aquamarine;
+        width: 500px;
+        height: 500px;
+        border:2px solid black;
+        margin: auto;
+    }
+    input{
+        width: 350px;
+        height: 50px;
+        font-size: 30px;
+        margin-left: 100px;
+    }
+    .submit{
+        width: 120px;
+        height: 50px;
+        font-size:22px ;
+        background-color: rgb(69, 108, 27);
+        margin-left: 200px;
+        text-align: center;
+        border-radius:5px ;
+
+    }
+    .submit:hover{
+        background-color: darkgreen;
+        border:3px solid white;
+        width: 200px;
+}
+h2{
+    font-size:40px;
+    margin-left:3px;
+   
+}
     </style>
 </head>
 <body>
-    <h2> be part your coder family</h2>
+    <div class="container">
+    <h2> Welcome to register here</h2>
     <form action="thank.html" class="sign-up-form">
       <input type="text" name="userName" id="name" placeholder="user name">
       <br><br>
@@ -30,7 +64,8 @@
         <input type="password" name="comfirmpass" id="Cpassword" placeholder="confirm password">
         <br><br>
        
-        <input type="submit" value="Submit">
+        <input class="submit" type="submit" value="Submit">
+    </div>
     </form>
     <script src="formValidation.js"></script>
 </body>
